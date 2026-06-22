@@ -1,0 +1,40 @@
+name: MdReader
+options:
+  bundleIdPrefix: com.rejeev
+  deploymentTarget:
+    macOS: "13.0"
+targets:
+  MdReader:
+    type: application
+    platform: macOS
+    sources:
+      - MdReader/Sources
+    info:
+      path: MdReader/Sources/Info.plist
+      properties:
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: Markdown Document
+            CFBundleTypeRole: Editor
+            LSItemContentTypes:
+              - net.daringfireball.markdown
+            LSHandlerRank: Owner
+        UTExportedTypeDeclarations:
+          - UTTypeIdentifier: net.daringfireball.markdown
+            UTTypeDescription: Markdown Document
+            UTTypeConformsTo:
+              - public.plain-text
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - md
+                - markdown
+        NSHumanReadableCopyright: ""
+        LSApplicationCategoryType: public.app-category.productivity
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rejeev.MdReader
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

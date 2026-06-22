@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MdReader logo mark">
+  <defs>
+    <linearGradient id="tealBlue" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#tealBlue)"/>
+  <!-- Monoline glyphs: M + a D rotated 90deg CW (top bar + downward arch) -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    <!-- M -->
+    <path d="M104 348 L104 176 L184 268 L264 176 L264 348"/>
+    <!-- D rotated 90deg CW: flat top, rounded bottom -> closed silhouette -->
+    <path d="M300 206 L416 206 A58 58 0 0 1 300 206 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MdReader markdown mark (dark mode)">
+  <defs>
+    <linearGradient id="tealBlue" x1="80" y1="120" x2="440" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="#FFFFFF"/>
+  <g fill="none" stroke="url(#tealBlue)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 344 L120 176 L196 262 L272 176 L272 344"/>
+    <path d="M366 168 L366 320"/>
+    <path d="M322 278 L366 322 L410 278"/>
+  </g>
+</svg>

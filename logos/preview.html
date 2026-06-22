@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MdReader — Logo (Concept B)</title>
+<style>
+  :root { --ink:#1F2A37; --muted:#6B7280; --line:#E5E7EB; }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif;color:var(--ink);background:#F7F8FA;}
+  header{padding:40px 48px 8px;} h1{margin:0;font-size:24px;letter-spacing:-.5px;}
+  p.sub{margin:6px 0 0;color:var(--muted);}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:32px 48px 24px;}
+  @media(max-width:820px){.grid{grid-template-columns:1fr;}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;}
+  .card h2{margin:0;padding:16px 22px;font-size:14px;border-bottom:1px solid var(--line);}
+  .row{display:flex;align-items:center;gap:28px;padding:26px 22px;flex-wrap:wrap;}
+  .row.dark{background:#0E1726;}
+  .s128 img{width:128px;height:128px;} .s64 img{width:64px;height:64px;}
+  .s32 img{width:32px;height:32px;} .s16 img{width:16px;height:16px;}
+  .cap{color:var(--muted);font-size:12px;margin-top:6px;text-align:center;}
+  .lockup{padding:24px 22px;border-top:1px solid var(--line);}
+  .lockup img{width:100%;max-width:460px;height:auto;}
+  .full{grid-column:1/-1;}
+  .swatches{display:flex;gap:14px;padding:8px 48px 48px;}
+  .sw{display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--muted)}
+  .chip{width:72px;height:30px;border-radius:8px;border:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+  <h1>MdReader — Final logo (Concept B)</h1>
+  <p class="sub">Modernized Markdown “M↓” · teal→blue gradient · scalable SVG</p>
+</header>
+<div class="grid">
+
+  <div class="card">
+    <h2>Primary mark — on light</h2>
+    <div class="row">
+      <div><img class="s128" src="mdreader-mark-chevron.svg" alt=""><div class="cap">128</div></div>
+      <div><img class="s64" src="mdreader-mark-chevron.svg" alt=""><div class="cap">64</div></div>
+      <div><img class="s32" src="mdreader-mark-chevron.svg" alt=""><div class="cap">32</div></div>
+      <div><img class="s16" src="mdreader-mark-chevron.svg" alt=""><div class="cap">16</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Dark-mode variant — white tile on dark</h2>
+    <div class="row dark">
+      <div><img class="s128" src="mdreader-mark-chevron-dark.svg" alt=""></div>
+      <div><img class="s64" src="mdreader-mark-chevron-dark.svg" alt=""></div>
+      <div><img class="s32" src="mdreader-mark-chevron-dark.svg" alt=""></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Monochrome / ink — glyph only (menu bar, favicon, docs)</h2>
+    <div class="row">
+      <div><img style="height:72px" src="mdreader-mark-mono-ink.svg" alt=""><div class="cap">ink</div></div>
+    </div>
+    <div class="row dark">
+      <div><img style="height:72px" src="mdreader-mark-mono-white.svg" alt=""><div class="cap" style="color:#9aa4b2">white</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>App icon sizes (from AppIcon.appiconset)</h2>
+    <div class="row" style="align-items:flex-end">
+      <div><img src="AppIcon.appiconset/icon_128x128.png" width="128"><div class="cap">256@2x</div></div>
+      <div><img src="AppIcon.appiconset/icon_32x32.png" width="32"><div class="cap">32</div></div>
+      <div><img src="AppIcon.appiconset/icon_16x16.png" width="16"><div class="cap">16</div></div>
+    </div>
+  </div>
+
+  <div class="card full">
+    <h2>Horizontal lockup</h2>
+    <div class="lockup"><img src="mdreader-lockup-chevron.svg" alt="MdReader lockup"></div>
+  </div>
+
+</div>
+<div class="swatches">
+  <div class="sw"><div class="chip" style="background:#14B8A6"></div>Teal #14B8A6</div>
+  <div class="sw"><div class="chip" style="background:#2563EB"></div>Blue #2563EB</div>
+  <div class="sw"><div class="chip" style="background:#1F2A37"></div>Ink #1F2A37</div>
+</div>
+</body>
+</html>
