@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var document: MarkdownDocument
+    @ObservedObject var store: EditorDocumentStore
 
     enum Tab: String, CaseIterable, Identifiable {
         case view = "View"
@@ -27,14 +27,18 @@ struct ContentView: View {
 
             switch selectedTab {
             case .view:
-                MarkdownView(source: document.text)
+                MarkdownView(source: store.text)
             case .edit:
-                TextEditor(text: $document.text)
-                    .font(.system(.body, design: .monospaced))
-                    .padding(.horizontal, 32)
-                    .padding(.vertical, 16)
+                TextEditor(text: Binding(
+                    get: { store.text },
+                    set: { store.text = $0; store.textDidChange() }
+                ))
+                .font(.system(.body, design: .monospaced))
+                .padding(.horizontal, 32)
+                .padding(.vertical, 16)
             }
         }
         .frame(minWidth: 700, minHeight: 500)
+        .navigationTitle(store.displayName)
     }
 }
